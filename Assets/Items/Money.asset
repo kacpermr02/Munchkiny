@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Money
   value: 10
   icon: {fileID: 21300000, guid: 0df83e8524ff54548ab3b7a1ee0feb50, type: 3}
+  prefab: {fileID: 5980452644015882324, guid: 4c9346f893dd2564fb7b408afd0ad9b9, type: 3}
