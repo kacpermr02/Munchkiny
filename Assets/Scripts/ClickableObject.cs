@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class ClickableObject : MonoBehaviour
 {
-    public enum ActionType { None, LoadScene, StartDialogue } // Typ akcji
-    public ActionType action; // Wybór akcji w inspektorze
-    public string targetSceneName; // Nazwa sceny, jeśli akcja to LoadScene
+    public enum ActionType { None, LoadScene, StartDialogue }
+    public ActionType action;
+    public string targetSceneName;
 
     public void OnClick()
     {
@@ -20,7 +20,6 @@ public class ClickableObject : MonoBehaviour
 
             case ActionType.StartDialogue:
                 Debug.Log($"Rozpoczynam dialog z {gameObject.name}");
-                // Możesz dodać logikę dialogu tutaj.
                 break;
 
             default:

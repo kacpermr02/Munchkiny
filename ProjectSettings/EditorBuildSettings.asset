@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 115549fcde319684eaced32704e66a86
+  - enabled: 1
+    path: Assets/Scenes/Scene0.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Scene1.unity
+    path: Assets/Scenes/ClozkPuzzle.unity
     guid: 023f1ecf83ffd044295c0395f76d7c4c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

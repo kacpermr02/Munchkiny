@@ -6,7 +6,7 @@ public class ItemPickup : MonoBehaviour
 
     void Pickup()
     {
-        Inventory.Instance.Add(Item); // Poprawiona nazwa zmiennej
+        Inventory.Instance.Add(Item);
         Destroy(gameObject);
     }
 

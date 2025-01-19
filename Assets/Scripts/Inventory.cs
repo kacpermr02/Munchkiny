@@ -21,7 +21,6 @@ public class Inventory : MonoBehaviour
         Instance = this;
         itemGameObjectMap = new Dictionary<Item, GameObject>();
 
-        // Subskrybuj zdarzenie OnItemSelected
         OnItemSelected += HandleItemSelected;
     }
 
