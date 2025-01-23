@@ -12,8 +12,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene0.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/ClozkPuzzle.unity
+    path: Assets/Scenes/ClockPuzzle.unity
     guid: 023f1ecf83ffd044295c0395f76d7c4c
+  - enabled: 1
+    path: Assets/Scenes/JigsawPuzzle.unity
+    guid: 3336230f303dc1e40801912e98c0ec82
+  - enabled: 1
+    path: Assets/Scenes/LockPuzzle.unity
+    guid: 4da6c1a6ec1183c4da9bc2cbd78976a7
+  - enabled: 1
+    path: Assets/Scenes/JigsawPuzzle2.unity
+    guid: d3602b74c4dbc6349ac694fb9e27de1a
+  - enabled: 1
+    path: Assets/Scenes/ColumnsPuzzle.unity
+    guid: e2ae8428a4e53f64b97716f3a94505f7
+  - enabled: 1
+    path: Assets/Scenes/NumbersPuzzle.unity
+    guid: 55aef279d6525ac4c833a8fe12b5a54f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

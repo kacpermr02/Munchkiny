@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
 
     public Transform ItemContent;
     public GameObject InventoryItem;
-    public GameObject targetObject; // Obiekt, który ma być aktywowany
+    public GameObject targetObject;
     public event EventHandler<Item> OnItemSelected;
 
     private Dictionary<Item, GameObject> itemGameObjectMap;
@@ -91,7 +91,7 @@ public class Inventory : MonoBehaviour
     {
         if (targetObject != null)
         {
-            targetObject.SetActive(true); // Aktywuj obiekt
+            targetObject.SetActive(true);
         }
     }
 }
