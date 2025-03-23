@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: a217b7f33007fee4c9aa872353ae738e
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MoonStrelka
+    second: {fileID: 2100000, guid: 53e79ad5f73830c4faa054e9c07d7a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Strelka
+    second: {fileID: 2100000, guid: bde8a899394e3ba42be7a712e11ce2a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Strelka2
+    second: {fileID: 2100000, guid: 270e8079e9091ca4188f7324eb3182f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZLDownSrodek
+    second: {fileID: 2100000, guid: 7ecee20ad43aab648ae5dc550bffa432, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZRDownSrodek
+    second: {fileID: 2100000, guid: 85976d45965f8a441bff1f2da66da53e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZRUPsrodek
+    second: {fileID: 2100000, guid: 03e8be26f08b8514ca0e8bdc1533b724, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarBase
+    second: {fileID: 2100000, guid: 868174bc39052324dbffa0cc986848bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarLDown
+    second: {fileID: 2100000, guid: 02d9a62cad4a867438d2d5067d4c2197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarLUPsrodek
+    second: {fileID: 2100000, guid: 3459c1acfc8edb94186fc27eb89fc722, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarLUp
+    second: {fileID: 2100000, guid: 72289889ace2c76419db77e1b0b3a3c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarRDown
+    second: {fileID: 2100000, guid: 835e35071818bbe489ea0b6bf55b72d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarRUP
+    second: {fileID: 2100000, guid: 681153b7b7169744faf109823bb55320, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZegarSrodek
+    second: {fileID: 2100000, guid: 349280fe08502c448a6ce96ff7cab161, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.001
+    second: {fileID: 2800000, guid: 7eedf694182fcbf44be78ec6b5962278, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.002
+    second: {fileID: 2800000, guid: 480024957790d6a48bbe5e06e5f37e29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.004
+    second: {fileID: 2800000, guid: 96a4605603ca6ee4e9bb5411ff874a6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.005
+    second: {fileID: 2800000, guid: 24782c2d4f895dd41ab3b5624edb876d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.006
+    second: {fileID: 2800000, guid: 24ba29793160e4345bf8744a76297b83, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.007
+    second: {fileID: 2800000, guid: e61e493ca5373a041aa6553f3c84e4ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.008
+    second: {fileID: 2800000, guid: f04b8b1d098e6e34cb4ab0ba09a1faa8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.009
+    second: {fileID: 2800000, guid: 4bc8a2b310ae5e04280ba64a3ed7eea3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.010
+    second: {fileID: 2800000, guid: ce64737bea9b1374cb24b0c2ee24cd3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.011
+    second: {fileID: 2800000, guid: e5691ea3912131b4db6d9f55164f83a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.012
+    second: {fileID: 2800000, guid: 3cba61ceb0a28664f835b47a80c9aea3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.013
+    second: {fileID: 2800000, guid: 1fe3a3c1d32a91e44a3b6170d1464f79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_diffuse_Material.014
+    second: {fileID: 2800000, guid: f1b0bf7767821b743af4e5d6128346f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.001
+    second: {fileID: 2800000, guid: f3782aa0b8c4e4342b670c89464a4d84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.002
+    second: {fileID: 2800000, guid: 3d2174c8e2bebc441b2b95bfbda462a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.004
+    second: {fileID: 2800000, guid: cbf25adbf27bb90469a6bb8033d7d6e3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.005
+    second: {fileID: 2800000, guid: 1083290d594a074449550b5bdeca1202, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.006
+    second: {fileID: 2800000, guid: b170582facd28444db91d2c05e21b482, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.007
+    second: {fileID: 2800000, guid: 17a097b18d2c6804c884cc1210218355, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.008
+    second: {fileID: 2800000, guid: 72b583a3623ebd54c81b8e14a76f60f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.009
+    second: {fileID: 2800000, guid: 8d072dfaf8bd8e34480a63bce839628d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.010
+    second: {fileID: 2800000, guid: 9ad59351f6a2be245b7702634de299d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.011
+    second: {fileID: 2800000, guid: e1eaceb9f55848349b0c2be03a6e2b8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.012
+    second: {fileID: 2800000, guid: 6d0056f886ec276499205aca6b8826f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.013
+    second: {fileID: 2800000, guid: 5fa7ad95860e95e44b4b691ab062d814, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Zegar_normalmap_Material.014
+    second: {fileID: 2800000, guid: afd477ce03881a04aaf1bad52a7e3aba, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
