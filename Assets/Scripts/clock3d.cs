@@ -8,7 +8,7 @@ public class clock3d : MonoBehaviour
     private Transform handMinute, handHour;
 
     [SerializeField]
-    private Transform clockCenter; // Środek zegara, wokół którego będą obracać się wskazówki
+    private Transform clockCenter;
 
     [SerializeField]
     public int sceneIndexToLoad;
@@ -22,11 +22,9 @@ public class clock3d : MonoBehaviour
 
     private void OnMouseDown()
     {
-        // Obracanie wskazówek wokół środka zegara
         handMinute.RotateAround(clockCenter.position, Vector3.forward, -30);
         handHour.RotateAround(clockCenter.position, Vector3.forward, -2.5f);
-
-        // Pobranie kąta obrotu wskazówek
+        
         float minuteAngle = Mathf.Round(handMinute.eulerAngles.z * 2) / 2;
         float hourAngle = Mathf.Round(handHour.eulerAngles.z * 2) / 2;
 

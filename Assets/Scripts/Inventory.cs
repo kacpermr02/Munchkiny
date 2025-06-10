@@ -2,26 +2,40 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
+
+    [Header("Itemy")]
     public List<Item> Items = new List<Item>();
 
+    [Header("UI")]
     public Transform ItemContent;
     public GameObject InventoryItem;
     public GameObject targetObject;
+
     public event EventHandler<Item> OnItemSelected;
 
     private Dictionary<Item, GameObject> itemGameObjectMap;
+    private Item selectedItem;
 
-    private void Awake() 
+    private void Awake()
     {
         Instance = this;
         itemGameObjectMap = new Dictionary<Item, GameObject>();
-
         OnItemSelected += HandleItemSelected;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Debug.Log("Naciśnięto O – próba załadowania sceny...");
+            LoadSelectedItemScene();
+        }
     }
 
     public void Add(Item item)
@@ -36,18 +50,19 @@ public class Inventory : MonoBehaviour
 
     public void ListItems()
     {
-        foreach (Transform item in ItemContent)
+        foreach (Transform child in ItemContent)
         {
-            Destroy(item.gameObject);
+            Destroy(child.gameObject);
         }
-        
+
         itemGameObjectMap.Clear();
 
         foreach (var item in Items)
         {
             GameObject obj = Instantiate(InventoryItem, ItemContent);
-            var itemName = obj.transform.Find("ItemName").GetComponent<TMP_Text>();
-            var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
+
+            TMP_Text itemName = obj.transform.Find("ItemName").GetComponent<TMP_Text>();
+            Image itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
 
             itemName.text = item.itemName;
             itemIcon.sprite = item.icon;
@@ -56,42 +71,55 @@ public class Inventory : MonoBehaviour
 
             obj.GetComponent<Button>().onClick.AddListener(() => SelectItem(item));
 
-            var selectedIndicator = obj.transform.Find("Selected");
+            Transform selectedIndicator = obj.transform.Find("Selected");
             if (selectedIndicator != null)
-            {
                 selectedIndicator.gameObject.SetActive(false);
-            }
         }
     }
 
-    private void SelectItem(Item selectedItem)
+    private void SelectItem(Item item)
     {
+        selectedItem = item;
+        Debug.Log($"Wybrano item: {item.itemName}");
+
         foreach (var pair in itemGameObjectMap)
         {
-            var selectedIndicator = pair.Value.transform.Find("Selected");
+            Transform selectedIndicator = pair.Value.transform.Find("Selected");
             if (selectedIndicator != null)
-            {
                 selectedIndicator.gameObject.SetActive(false);
-            }
         }
 
-        if (itemGameObjectMap.ContainsKey(selectedItem))
+        if (itemGameObjectMap.TryGetValue(item, out var obj))
         {
-            var selectedIndicator = itemGameObjectMap[selectedItem].transform.Find("Selected");
+            Transform selectedIndicator = obj.transform.Find("Selected");
             if (selectedIndicator != null)
-            {
                 selectedIndicator.gameObject.SetActive(true);
-            }
         }
 
-        OnItemSelected?.Invoke(this, selectedItem);
+        OnItemSelected?.Invoke(this, item);
     }
 
-    private void HandleItemSelected(object sender, Item selectedItem)
+    private void HandleItemSelected(object sender, Item item)
     {
         if (targetObject != null)
-        {
             targetObject.SetActive(true);
+    }
+
+    public void LoadSelectedItemScene()
+    {
+        if (selectedItem == null)
+        {
+            Debug.LogWarning("Nie wybrano żadnego itema!");
+            return;
         }
+
+        if (string.IsNullOrEmpty(selectedItem.sceneName))
+        {
+            Debug.LogWarning($"Item '{selectedItem.itemName}' nie ma przypisanej nazwy sceny!");
+            return;
+        }
+
+        Debug.Log($"Ładowanie sceny: {selectedItem.sceneName}");
+        SceneManager.LoadScene(selectedItem.sceneName);
     }
 }
